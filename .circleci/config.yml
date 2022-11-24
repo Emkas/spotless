@@ -133,7 +133,7 @@ jobs:
       - checkout
       - run:
           name: gradlew test
-          command: gradlew test --build-cache -PSPOTLESS_EXCLUDE_MAVEN=true
+          command: gradlew test -PSPOTLESS_EXCLUDE_MAVEN=true
       - store_test_results:
           path: testlib/build/test-results/test
       - store_test_results:
